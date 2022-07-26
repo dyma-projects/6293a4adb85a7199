@@ -87,7 +87,7 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-devkit/build-angular:eslint",
           "options": {
             "tsConfig": [
               "src/tsconfig.app.json",
@@ -112,7 +112,7 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-devkit/build-angular:eslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
             "exclude": [
@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "projet4"
+  "defaultProject": "projet4",
+  "cli": {
+    "analytics": false
+  }
 }
